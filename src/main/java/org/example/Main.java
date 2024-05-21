@@ -12,6 +12,10 @@ public class Main {
 
         tx.begin();
         try {
+
+
+
+
             tx.commit();
         }catch (Exception e){
             tx.rollback();
