@@ -1,8 +1,11 @@
 package org.example;
 
-import org.example.domain.Member;
+import org.example.domain.Book;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +16,10 @@ public class Main {
         tx.begin();
         try {
 
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
+            em.persist(book);
 
 
 
