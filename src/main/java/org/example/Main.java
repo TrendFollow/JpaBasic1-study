@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.domain.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,11 +14,6 @@ public class Main {
 
         tx.begin();
         try {
-
-            Book book = new Book();
-            book.setName("JPA");
-            book.setAuthor("김영한");
-            em.persist(book);
 
 
 
